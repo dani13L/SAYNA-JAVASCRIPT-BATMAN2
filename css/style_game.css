@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(../police/rajdhani/Rajdhani-Light.ttf)  
+}
+
+
+@font-face {
+    font-family: "Space-Grotesk";
+    src: url(../police/space/SpaceGrotesk-Light.ttf);
+}
+@font-face {
+    font-family: "Space-Grotesk-Regular";
+    src: url(../police/space/SpaceGrotesk-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family:'Space-Grotesk';  
+    background-color: rgb(0, 0, 0);  
+    border-bottom: none;
+    border-right:#bcbbbd23 3px solid; 
+    border-left:#bcbbbd23 3px solid; 
+} 
+.popup-result{
+    z-index: 1;
+    display: none;
+    color: #FFF;
+    background: linear-gradient(143deg,rgba(237,222,191,0.4),rgba(25,88,125,0.4)) ;
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    position: fixed;
+    top: 300px;
+    left: 300px;
+    .inside{
+        padding: 50px;
+        margin: 30px;
+        background-color: #030303;
+        border-radius: 20px;
+        box-shadow: 2px 2px 40px black;
+    
+     }
+     .btn-restart{
+        background: linear-gradient(
+            142deg,rgb(121,120,118,0.5),rgba(228,122,1,0.6) 80%
+        );
+        &:hover{
+            background: linear-gradient(
+                142deg,rgb(121,120,118,0.5),rgba(167,89,0) 80%
+            );
+        }
+        padding:15px 30px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        
+    }
+
+    
+ }
+
+header{
+    background-image: url('../Assets_game/Illustrations/Batgame_1.png');
+    background-size: cover;
+   
+}
+.menu a{
+    padding-left: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.NavbarHeader{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:  40px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 0.2s forwards;
+}
+
+
+.NavbarHeader :hover{
+    color:#ffff00;   
+   }
+.menu .selectGame{
+text-decoration: underline;
+}
+.letsplay{
+    padding-bottom: 600px;
+    color:#FFF;
+    position: relative;
+    top:200px;
+    left: 100px;
+    font-weight: 500;
+    font-size: larger
+}
+
+
+.aprèsbas{
+    text-align: center;
+     
+ }
+ 
+ 
+  .chevalierNoir h1{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+   
+   
+  }
+.chevalierNoir img{
+    display: block;
+    margin: 20px auto;
+}
+
+.questions{
+    width: 85%;
+    margin: 0 auto;
+    border-left: #bcbbbd23 3px solid; 
+    border-right: #bcbbbd2f 3px solid;
+    padding-bottom: 100px;
+    display: none;
+    .nombreDeQuestion {
+        display: flex;
+        justify-content: center;
+        }
+  
+    .nombre{
+        color: white;
+    }
+    .card-quizz{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        .card-image img{
+            width:80%;
+        }
+        .quiz-question{
+            margin: 20px 0;
+            color: white;
+        }
+        .card-body-quizz{
+            z-index: 1;
+        }
+        .qcm{
+            
+           
+            margin:10px;
+            padding:5px;
+            font: size 20px;
+            
+        }
+        .check{
+            margin: 20px 20px;
+
+        }
+        .response{
+            background-color: darkgray;
+            display: block;
+            margin: 20px 0;
+        }
+        
+    }
+}
+.btn-game{
+    width: 85%;
+    margin: 0 auto;
+    border-left: #bcbbbd23 3px solid; 
+    border-right: #bcbbbd2f 3px solid;
+    padding-bottom: 100px;
+    display: none;
+    justify-content: center;
+    padding: 40px 0;
+    
+    .btn{
+        background: linear-gradient(
+            142deg,rgb(121,120,118,0.5),rgba(228,122,1,0.6) 80%
+        );
+        &:hover{
+            background: linear-gradient(
+                142deg,rgb(121,120,118,0.5),rgba(167,89,0) 80%
+            );
+        }
+        padding:15px 30px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        
+    }
+}
+
+
+/*partie scrollside*/
+.SrcollSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 52px;
+    top: 200px; 
+    position: fixed;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.logoReseau{
+    padding: 10px;
+}
+ input[type="submit"]{
+    font-family: "Space-Grotesk-Regular";
+    font-size: 20px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px; 
+    width: 250px;
+    background-image: linear-gradient(160deg,#64625df8,#894e00);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*Partie footer*/
+footer{
+   
+    background-color: black;   
+}
+
+.content1{
+    width: 85%;
+    margin: 0 auto;
+    border-left: #bcbbbd23 3px solid; 
+    border-right: #bcbbbd2f 3px solid;
+    padding-bottom: 100px;
+}
+.wb{
+    display: flex;
+    width: 55%;
+    margin: 0 auto;  
+    padding-top: 200px;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.wb img{
+    padding-right: 10px;
+}
+
+.theLogo{
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+    /*animation fade in*/
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 1s forwards;
+}
+.logoItem1:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ; 
+}
+.logoItem2:hover{
+    filter:invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%) ; 
+}
+.theLogo .nonsociaux{
+    padding: 5px;
+}
+.theLogo .sociaux{
+    padding: 15px; 
+      
+}
+.theLogo .logoItem2{
+    padding-left: 22px;
+}
+.theLogo .logoItem1{
+    padding-left: 15px;
+}
+.theLogo .logoItem{
+    padding-top: 20px;
+    padding-left: 8px;
+}
+
+.wb .footText{
+    color: white;
+    font-size: 11px;
+    font-weight: lighter;  
+}
+
+
+/*retouche specifique*/
+.content{
+    width: 85%;
+    margin: 0 auto;
+    border-left: #bcbbbd23 3px solid; 
+    border-right: #bcbbbd2f 3px solid;
+}
+.chevalierNoir{
+    width: 85%;
+    margin: 0 auto;
+    border-left: #bcbbbd23 3px solid; 
+    border-right: #bcbbbd2f 3px solid;
+    padding-top: 100px;
+}
+body .bordUp{
+    border-top: #bcbbbd48 3px solid;  
+    position: relative;
+    left: 102px;
+    top: 132px;
+    width: 85%;
+}
+
+/*animation fade in*/
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      
+     
+  transform: translateX(0);
+    }
+  }
+  /*design de la partie header*/
+
+
+  /*RESPONSIVE*/
+ @media screen and (max-width: 768px) {
+    body .bordUp {
+        top: 100px;
+        width: 85%;
+        left: 55px;
+    }
+
+    .SrcollSide {
+        left: 91.5%;
+    }
+    .chevalierNoir img{
+        display: block;
+        width: 400px;
+        margin: 20px auto;
+    }
+    .flecheBas{
+        width: 10px;
+        height: 20px;
+    }
+
+ }
+

@@ -1,0 +1,1076 @@
+ @font-face {
+     font-family: 'Rajdhani';
+     src: url(../police/rajdhani/Rajdhani-Medium.ttf)
+ }
+
+
+ @font-face {
+     font-family: "Space-Grotesk";
+     src: url(../police/space/SpaceGrotesk-Light.ttf);
+ }
+
+ @font-face {
+     font-family: "Space-Grotesk-Regular";
+     src: url(../police/space/SpaceGrotesk-Regular.ttf);
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+ }
+
+ .allContenu {
+     background-image: url(../Assets_home/Illustrations/Bathome1.png);
+     background-repeat: no-repeat;
+ }
+
+
+ body {
+     font-family: 'Space-Grotesk';
+     background-color: black;
+     border-bottom: none;
+     border-right: #bcbbbd23 3px solid;
+     border-left: #bcbbbd23 3px solid;
+ }
+ /*message reçu*/
+ .popupbox{
+    z-index: 1;
+    display: none;
+    color: #FFF;
+    background: linear-gradient(143deg,rgba(237,222,191,0.4),rgba(25,88,125,0.4)) ;
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    position: fixed;
+    top: 300px;
+    left: 300px;
+    .inside{
+        padding: 50px;
+        margin: 30px;
+        background-color: #19587d;
+        border-radius: 20px;
+        box-shadow: 2px 2px 40px black;
+    
+     }
+     h1{
+        text-transform: uppercase;
+     }
+
+    
+ }
+ 
+
+ /*retouche en global*/
+ h1 {
+     font-family: "Rajdhani";
+     font-size: 36px;
+     font-weight: 400px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ h2 {
+     font-size: 12px;
+     font-weight: 400;
+     font-family: "Rajdhani";
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+
+ }
+
+ .p2 {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 20px;
+ }
+
+ .description1 {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 20px;
+ }
+
+ /*retouche specifique*/
+ .content {
+     width: 85%;
+     margin: 0 auto;
+     border-left: #bcbbbd23 3px solid;
+     border-right: #bcbbbd2f 3px solid;
+ }
+
+ body .bordUp {
+     border-top: #bcbbbd48 3px solid;
+     position: relative;
+     left: 102px;
+     top: 132px;
+     width: 85%;
+ }
+
+ /*animation fade in*/
+ @keyframes fade-in {
+     0% {
+         opacity: 0;
+         transform: translateX(-100%);
+     }
+
+     100% {
+         opacity: 1;
+
+
+         transform: translateX(0);
+     }
+ }
+
+ /*design de la partie header*/
+ .contenu {
+
+     background-image: url("Bathome1.png");
+     background-size: cover;
+     background-position: top center;
+     background-repeat: no-repeat;
+ }
+
+
+ .NavbarHeader {
+     width: 80%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 40px;
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 0.2s forwards;
+ }
+
+ .NavbarHeader a {
+     color: white;
+     font-weight: bold;
+     font-size: 20px;
+     padding-left: 50px;
+     text-decoration: none;
+ }
+
+ .menu .selectGame {
+     text-decoration: underline;
+ }
+
+ .NavbarHeader :hover {
+     color: #ffff00;
+ }
+
+ .Milieu {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 350px;
+     width: 88%;
+     margin: 0 auto;
+     color: white;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .Milieu .IlestBat {
+     font-size: 25px;
+     font-weight: 900px;
+     padding-top: 20px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .bas {
+     width: 44%;
+     display: flex;
+     margin: 0 auto;
+     padding-top: 45px;
+     box-sizing: border-box;
+     padding-top: 58px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .bas .btn {
+     font-family: "Rajdhani";
+     text-decoration: none;
+     font-weight: lighter;
+     font-size: 20px;
+     padding: 10px 10px;
+     background: linear-gradient(80deg, #eddebf65, #8900098c);
+     color: white;
+     border-style: none;
+ }
+
+ .bas .btn2 {
+     padding-left: 80px;
+ }
+
+ .btn:hover {
+     background: linear-gradient(80deg, #eddebf, #890009);
+
+ }
+
+ .aprèsbas {
+     text-align: center;
+     padding-top: 350px;
+
+ }
+
+ /*design de la partie main*/
+
+ main {
+     background-color: black;
+     background-size: cover;
+     color: white;
+ }
+
+ /*partie scrollside*/
+ .SrcollSide {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     right: 52px;
+     top: 200px;
+     position: fixed;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .logoReseau {
+     padding-top: 25px;
+ }
+
+ .logoReseau:hover {
+     filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+ }
+
+ /*photo de batman à droite*/
+ .batMstyle {
+     position: absolute;
+     right: 0px;
+     size-adjust: 50px;
+     margin-top: 2800px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ /*description des titres*/
+ .description {
+     font-family: "Space-Grotesk-Regular";
+     width: 90%;
+     font-size: 20px;
+     text-align: justify;
+     padding-top: 40px;
+     padding-bottom: 20px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .personnage {
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ /*zoomer les images des personnages*/
+ .principal .personnage img:hover {
+     transform: scale(1.2);
+ }
+
+ /*batman au ciné*/
+ section .AuCine {
+     width: 85%;
+     margin: 0 auto;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ section .AuCine h1 {
+     padding-top: 100px;
+ }
+
+ .principal {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+
+ }
+
+ /*Aligner les à propos des personnages*/
+ .propos {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 20px;
+     font-weight: 300;
+     text-align: center;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+
+
+ /*partie némésis*/
+ .nemesis .nem {
+     display: flex;
+     margin: 0 10px;
+
+ }
+
+ .nemesis .nem img {
+     position: absolute;
+     margin-top: 20px;
+     width: 120px;
+     height: 120px;
+     left: 285px;
+ }
+
+ .nemesis {
+     width: 85%;
+     margin: 0 auto;
+     padding-top: 40px;
+ }
+
+ section .nemesis h1 {
+     margin-top: 100px;
+ }
+
+ .nemesis .principal {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+     align-items: center;
+ }
+
+ .nemesis .principal .propos {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 20px;
+     align-items: center;
+
+ }
+
+ section .nemesish1 {
+     margin-top: 100px;
+ }
+
+
+
+ /*partie allié*/
+ section .Allier {
+     width: 85%;
+     margin: 0 auto;
+     padding-top: 80px;
+ }
+
+ .Allier .principal {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+ }
+
+ .Allier .principal .propos {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 20px;
+ }
+
+
+
+ /*partie justice league*/
+ .justiceLeague {
+     padding-top: 150px;
+     padding-bottom: 75px;
+     width: 85%;
+     margin-left: 150px;
+     font-size: 20px;
+     text-align: justify;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .justiceLeague img {
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+
+
+ /*partie multimedia*/
+ .multimedia {
+     width: 86%;
+     margin: 0 auto;
+     padding-top: 80px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .MULTIMEDIA .MultimediaPrincipal {
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .MULTIMEDIA .ContenuMilieu {
+     display: flex;
+     width: 51%;
+     margin: 20px auto;
+ }
+
+ .ContenuMilieu .ActAdventure {
+     padding: 15px;
+     background: linear-gradient(69deg, #0d0e09, #19587d);
+     border: #bcbbbd23 2px solid;
+     border-left: none;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px;
+     width: 85%;
+ }
+
+ .ContenuMilieu .ActAdventure .IMB {
+     padding-top: 10px;
+     font-weight: 300px;
+ }
+
+ .ContenuMilieu .ActAdventure .enJaune {
+     color: #f8f184;
+ }
+
+ .ActAdventure h2 {
+     font-weight: normal;
+ }
+
+ .ActAdventure h3 {
+     padding-top: 5px;
+     font-size: 15px;
+     font-weight: lighter;
+ }
+
+ .ActAdventure p {
+     padding-top: 5px;
+     font-size: 12px;
+ }
+
+ .MultimediaPrincipal button {
+     margin-top: 100px;
+     background: none;
+     border: none;
+ }
+
+ .MultimediaPrincipal button.FlechRight {
+     padding-right: 30px;
+ }
+
+ .MULTIMEDIA .bandeAnnonce {
+     padding-top: 95px;
+     width: 100%;
+     padding-bottom: 180px;
+
+ }
+
+
+
+
+ /*Partie formulaire*/
+ #contactUs {
+     background: linear-gradient(150deg, #444442e0, #1350746b);
+     padding: 20px 0;
+     border-top: #64625df8 1px solid;
+     border-bottom: #64625df8 1px solid;
+     border-left: none;
+     border-right: none;
+
+ }
+
+ .formulaire {
+     width: 50%;
+     margin: 0px auto;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .formulaire h1 {
+     text-align: center;
+     padding-bottom: 50px;
+     font-weight: bold;
+     font-size: 35px;
+ }
+
+ .formulaire .titre {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 22px;
+     display: block;
+     margin: 28px 0;
+     padding-top: 20px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ #contactUs .formulaire input[type="email"] {
+     border-top: none;
+     border-right: none;
+     border-left: none;
+     width: 100%;
+     border-bottom: 1px solid rgba(255, 254, 254, 0.548);
+     background-color: transparent;
+     padding: 7px 0;
+ }
+
+ /*les labels*/
+ .lab {
+     color: rgba(128, 128, 128, 0.753);
+ }
+
+ /*menu deroulante*/
+ .menu {
+     list-style: none;
+ }
+
+ .menu .submenu {
+     display: none;
+     background: linear-gradient(120deg, #cacaca, #19587d);
+     width: 100%;
+     padding-left: 15px;
+ }
+
+ .menu .submenu li {
+     border-bottom: #cacaca 1px solid;
+     padding-top: 10px;
+     padding-left: 10px;
+
+ }
+
+ .submenu li a {
+     text-decoration: none;
+     color: white;
+ }
+
+ .choose li:hover .submenu {
+     display: inline-block;
+     position: absolute;
+     left: 0px;
+     top: 100%;
+     padding: 0px;
+     z-index: 1000;
+ }
+
+ .submenu li:hover a {
+     font-weight: bold;
+
+ }
+
+ .submenu li:hover {
+     background: linear-gradient(120deg, #cacaca, #19587da1);
+     font-weight: bold;
+ }
+
+ /*TO FIND
+comment faire une image clickable
+resposive
+fde in gauche droite
+menu deroulante apartir d'une liste
+personnaliser une boite de dialogue*/
+ #contactUs .formulaire .choose {
+     position: relative;
+     display: flex;
+     border-top: none;
+     border-right: none;
+     border-left: none;
+     width: 100%;
+     border-bottom: 1px solid rgba(255, 254, 254, 0.548);
+     background-color: transparent;
+     padding-top: 20px;
+
+ }
+
+ #contactUs .formulaire textarea {
+     display: block;
+     border-top: none;
+     border-right: none;
+     border-left: none;
+     width: 100%;
+     border-bottom: 1px solid rgba(255, 254, 254, 0.548);
+     background-color: transparent;
+     padding: 0px 0;
+ }
+
+ #contactUs .iconMenuFlech {
+     padding-left: 65px;
+     cursor: pointer;
+ }
+
+ #contactUs .iconMenuFlech img {
+     transform: rotate(90deg);
+     width: 20px;
+ }
+
+ #contactUs .message {
+     border-bottom: 1px solid rgba(255, 254, 254, 0.548);
+     margin: 15px 0;
+     padding-top: 15px;
+ }
+
+ ::-webkit-input-placeholder {
+     font-size: 15px;
+     color: rgba(128, 128, 128, 0.753);
+ }
+
+ ::-moz-placeholder {
+     font-size: 15px;
+     color: rgba(128, 128, 128, 0.753);
+ }
+
+ ::-ms-input-placeholder {
+     font-size: 15px;
+     color: rgba(128, 128, 128, 0.753);
+ }
+
+ ::placeholder {
+     font-size: 15px;
+     color: rgba(128, 128, 128, 0.753);
+ }
+
+ /*les boutons group*/
+ .btn-group {
+     display: flex;
+     padding: 10px;
+     justify-content: space-around;
+ }
+
+ .formulaire input[type="radio"] {
+     opacity: 0;
+ }
+
+
+
+
+ .formulaire .btn-group label {
+     font-family: "Space-Grotesk-Regular";
+     cursor: pointer;
+     padding: 10px;
+     border: 2px solid;
+     width: 125px;
+     border-image: linear-gradient(69deg, #cacaca, #19587d) 1;
+     font-size: 15px;
+     text-align: center;
+ }
+
+ .formulaire .btn-group label:hover {
+
+     background: linear-gradient(69deg, #cacaca, #19587d);
+ }
+
+ .formulaire input[type="submit"] {
+     font-family: "Space-Grotesk-Regular";
+     font-size: 20px;
+     display: block;
+     margin: 20px auto;
+     padding: 25px 0;
+     width: 250px;
+     background-image: linear-gradient(160deg, #64625df8, #890008);
+     border: none;
+     color: white;
+     cursor: pointer;
+ }
+
+
+ /*Partie citation*/
+ .citation {
+     width: 80%;
+     margin: 0 auto;
+     padding: 100px;
+     padding-top: 200px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .citation .quotes2 {
+     float: right;
+ }
+
+ .citation .TheCitation {
+     text-align: center;
+     width: 65%;
+     margin: 0 auto;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .TheCitation .auteur {
+     padding-top: 20px;
+     font-size: 12px;
+     font-weight: lighter;
+     color: #cacaca;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .TheCitation .text {
+     font-size: 18px;
+     width: 110%;
+     padding-top: 30px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+
+ }
+
+ .rondIcon img {
+     width: 10px;
+     height: 5px;
+     padding-left: 5px;
+ }
+
+ .rondIcon {
+     display: flex;
+     padding-top: 20px;
+     width: 20%;
+     margin: 0 auto;
+ }
+
+
+
+ /*Partie footer*/
+ footer {
+     background-color: black;
+ }
+
+ .content1 {
+     width: 85%;
+     margin: 0 auto;
+     border-left: #bcbbbd23 3px solid;
+     border-right: #bcbbbd2f 3px solid;
+     padding-bottom: 100px;
+ }
+
+ .wb {
+     display: flex;
+     width: 55%;
+     margin: 0 auto;
+     padding-top: 200px;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .wb img {
+     padding-right: 10px;
+ }
+
+ .theLogo {
+     display: flex;
+     padding: 30px 0;
+     justify-content: center;
+     /*animation fade in*/
+     opacity: 0;
+     transform: translateX(-100%);
+     animation: fade-in 1s forwards;
+ }
+
+ .logoItem1:hover {
+     filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+ }
+
+ .logoItem2:hover {
+     filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+ }
+
+ .theLogo .nonsociaux {
+     padding: 5px;
+ }
+
+ .theLogo .sociaux {
+     padding: 15px;
+
+ }
+
+ .theLogo .logoItem2 {
+     padding-left: 22px;
+ }
+
+ .theLogo .logoItem1 {
+     padding-left: 15px;
+ }
+
+ .theLogo .logoItem {
+     padding-top: 20px;
+     padding-left: 8px;
+ }
+
+ .wb .footText {
+     color: white;
+     font-size: 11px;
+     font-weight: lighter;
+ }
+
+
+
+
+ /*RESPONSIVE*/
+ @media screen and (max-width: 768px) {
+     body .bordUp {
+         top: 100px;
+         width: 85%;
+         left: 55px;
+     }
+
+     .SrcollSide {
+         left: 91.5%;
+     }
+
+     /*partie personnage*/
+     .NavbarHeader {
+         width: 88%;
+         margin: 0 auto;
+         padding-top: 15px;
+     }
+
+     .NavbarHeader a {
+         padding-top: 15px;
+     }
+
+     .Milieu {
+         width: 80%;
+         margin: 0 auto;
+         padding-top: 200px;
+     }
+
+     .Milieu .p2 {
+         padding-top: 10px;
+         font-size: 20px;
+         font-weight: normal;
+     }
+
+     .Milieu .description1 {
+         padding-top: 10px;
+         font-size: 18px;
+         font-weight: normal;
+         text-align: center;
+     }
+
+     .Milieu .IlestBat {
+         padding-top: 10px;
+     }
+
+     .bas {
+         padding-top: 50px;
+         display: block;
+         width: 60%;
+         margin: 0 auto;
+         text-align: center;
+     }
+
+     .bas .btn {
+         padding: 20px 38px;
+     }
+
+     .bas .btn1 {
+         padding-left: 10px;
+     }
+
+     .bas .btn2 {
+         padding-left: 0px;
+         padding-top: 80px;
+     }
+
+     .aprèsbas {
+         padding-top: 250px;
+     }
+
+
+     /*partie main*/
+     .propos {
+         text-align: center;
+         padding-bottom: 50px;
+     }
+
+     .principal {
+         text-align: center;
+         display: block;
+         padding-bottom: 150px;
+     }
+
+     .nemesis {
+         padding-top: 20px;
+     }
+
+     .nemesis h1 {
+         padding-top: 0px;
+     }
+
+     .nemesis .nem {
+         display: flex;
+         margin: 0 3px;
+
+     }
+
+     .nemesis .nem img {
+         position: absolute;
+         margin-top: 3px;
+         left: 200px;
+     }
+
+     .principal img {
+         padding-top: 10px;
+     }
+
+     .nemesis .principal {
+         display: block;
+         text-align: center;
+     }
+
+     .nemesis .principal img {
+         padding-top: 10px;
+     }
+
+
+     section .Allier {
+         padding-top: 0px;
+     }
+
+     .Allier h1 {
+         padding-top: 0px;
+     }
+
+     .Allier .principal {
+         display: block;
+         text-align: center;
+         padding-top: 50px;
+     }
+
+     .Allier .principal img {
+         padding-top: 10px;
+     }
+
+     /*partie justice league*/
+     .justiceLeague {
+         width: 80%;
+         margin: 0 auto;
+         padding-left: 0px;
+     }
+
+     /*partie multimedia*/
+     .MultimediaPrincipal {
+         width: 100%;
+     }
+
+     .MultimediaPrincipal .FlechLeft {
+         padding-top: 100px;
+     }
+
+     .MultimediaPrincipal .FlechRight {
+         padding-top: 100px;
+     }
+
+     .MULTIMEDIA .ContenuMilieu {
+         display: block;
+         width: 75%;
+         margin: 0 auto;
+         border: #bcbbbd23 2px solid;
+         border-radius: 15px;
+         background-color: black;
+     }
+
+     .ContenuMilieu img {
+         width: 75%;
+         padding-left: 80px;
+         margin: 0 auto;
+         height: 200px;
+
+     }
+
+     .ContenuMilieu .ActAdventure {
+         width: 100%;
+         margin-top: 0px;
+         border: none;
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
+         border-bottom-left-radius: 15px;
+     }
+
+     .multimedia .bandeAnnonce {
+         height: 600px;
+         padding-top: 80px;
+     }
+
+
+     /*partie formulaire*/
+     .formulaire {
+         width: 80%;
+     }
+
+     .choose .iconMenuFlech {
+         padding-top: 20px;
+     }
+
+     /*partie citation*/
+     .citation {
+         padding: 100px 0;
+         width: 96%
+     }
+
+     .rondIcon {
+         width: 22%;
+     }
+
+     /*partie footer*/
+     .wb {
+         text-align: center;
+         padding-top: 80px;
+         width: 75%;
+     }
+
+     .wb .footText {
+         font-size: 8px;
+     }
+
+     .theLogo {
+         padding-top: 30px;
+         width: 60%;
+         margin: 0 auto;
+     }
+
+     .theLogo .sociaux {
+         padding-right: none;
+     }
+
+     .content1 {
+         padding-bottom: 50px;
+     }
+ }

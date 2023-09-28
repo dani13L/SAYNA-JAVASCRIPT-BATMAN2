@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_game.css">
+   <title>Batman-univers</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <div class="bordUp"></div>
+    <div class="AllContent">  <!--class qui constitue tout les contenu du body-->
+        <header>
+            <div id="allContenu">
+                <div class="contenu">
+                                <!--Class qui contient tout les élements du header . J'ai divisé mon header  en 4 grandes partie:navbarHeader, milieu, bas et après bas-->
+                    <div class="content">
+                        <nav class="NavbarHeader">  <!--class pour la partie navbar du site-->
+                            <a href="#"> <img src="Assets_game\Logos\logohome.png" alt="imageLogo"></a>
+                            <div class="menu">
+                                <a href="index.html">HOME</a>
+                                <a class="selectGame">GAME</a>
+                            </div>
+                        </nav>
+                        <div class="letsplay"><h1>LET’S PLAY<br> A LITTLE GAME...</h1></div>
+                            <!--contien la photo qui fait de la partie milieu à l'après bas , le heroHeader du site-->
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="SrcollSide">
+                <a href="#allContenu"><img class="logoReseau" id="top-arrow" src="Assets_game\Logos\logo_bat_flèche.png" alt=""></a>
+                <img class="logoReseau" src="Assets_game\Logos\icon_facebook.png" alt="">
+                <img class="logoReseau" src="Assets_game\Logos\icon_ig.png" alt="">
+                <img class="logoReseau" src="Assets_game\Logos\icon_tw.png" alt="">
+                <a href="#contactUs"><img class="logoReseau" id="down-arrow" src="Assets_game\Logos\logo_bat_flèche_2.png" alt=""></a>
+        </div> 
+            
+            </header>
+            <main>
+                <section class="chevalierNoir" id="entete">
+                    <div class="aprèsbas">
+                    <img src="Assets_game\Logos\flèche_down_header.png" alt="Flèche en bas" class="flecheBas"></div>
+                    <h1 >CONNAISSEZ VOUS BIEN CE CHEVALIER NOIR</h1>
+                    <img src="Assets_game/Illustrations/Batgame_2.png" alt="">
+                    <input type="submit" value="DÉMARRER LE QUIZ" id="demarer">
+                </section>
+
+            
+                <div class="questions" id="questions">
+                    <div class="nombreDeQuestion">
+                        <h2 >
+                            <span class="nombre" id="number-quiz">1</span> 
+                            <span class="nombre" id="total-quiz">/11</span>
+    
+                        </h2>
+                    </div>
+                    
+                    <div class="card-quizz">
+                        <div class="card-image">
+                            <img src="Assets_game/Illustrations/Batgame_3.png" alt="" id="img-illustrate">
+                        </div>
+                        <div class="card-body-quizz">
+                            <div class="quiz-question">
+                                <h2 id="question"></h2>
+                            </div>
+                            <div class="choisirReponse">
+                               
+                                <div class="qcm" id="qcm">
+                                  
+                               
+                                  
+                                </div>
+                                
+                            </div>
+                            <span id="error-message"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page question suivante -->
+
+                <div class="btn-game" id="btn-game">
+                    
+                    <input class="btn"  id="btn-next" type="submit" value="QUESTION SUIVANTE"> 
+                </div>
+             
+                    
+                
+            </main>
+                       
+         </div>     
+         
+         <footer>
+           
+            <div class="content1">
+                <div class="wb">
+                   <img src="Assets_game\Logos\icon_WB.png" alt="logo warner bross">
+                   <p class="footText">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+                </div>
+                <div class="theLogo">   <!-- declaration des logos qui ramène vers des liens-->
+                   <a href="#" class="logoItem1"><img src="Assets_game\Logos\logo_sayna_white.png" alt="logo Sayna ">
+                   <a href="#" class="logoItem"><img src="Assets_game\Logos\icon_x.png" alt="logo x">
+                   <a href="#" class="logoItem1"><img src="Assets_game\Logos\icon_DC.png" alt="logo DC">
+                  
+                   <div class="sociaux">
+                      <a href=""class="logoItem2"><img src="Assets_game\Logos\icon_facebook.png" alt="logo fb"></a>
+                      <a href=""class="logoItem2"><img src="Assets_game\Logos\icon_ig.png" alt="logo insta"></a>
+                      <a href=""class="logoItem2"><img src="Assets_game\Logos\icon_tw.png" alt="logo tweeter"></a>
+                   </div>
+             </div>
+            </div> 
+     </footer>
+     
+     <div class="popup-result" id="popup-result">
+        <div class="inside">
+            <h1 class="titre" id="titre"> </h1>
+            <h2 class="msg-result" id="msg-result"></h2>
+            <button class="btn-restart" id="btn-restart" " >Recommencer</button>
+        </div>
+    </div>
+     <script src="js/game.js"></script>    
+</body>
+</html>
